@@ -1,0 +1,83 @@
+Bad programmers worry about the code. Good Programmers worry about the data structure and their relationship
+
+There is always a trade-off between memory usage and running time of the underlying algorithm
+
+### Abstract Data Type
+    Abstract data types define the model (logical description) for a certain data structure
+
+    it is like supertyping in programming
+
+    ADTs define the basic behavior - do not specify the implementation or the programming language etc.
+
+    Example:
+        stack - push pop
+
+
+### Data structure  
+    are the concrete representations and implementations of the underlying data
+
+    Example: arrays, linked lists etc.
+
+Abstract Data Type stack can be implemented by array or linked lists
+
+
+### What are array data structure
+
+    the aim is to amke operations as fast as possible: insrting new items or removing given items from the data structure
+
+    arrays are data structures where all the items are identified by an index - an integer starting with 0
+
+    the items of the array are located right next to each other in the main memory (RAM) - they can be accessed by the index (random access)
+
+    memory address = array's address + index * data size (4 byte)
+
+    more complex data structures reply heavily on arrays because of random indexing - O(1) access of items with known indexes
+
+### What are lists in Python
+    everything is an object in Python: list stores referencs to the items and objects
+
+    every reference is 8 bytes in size (independent of the datatype)
+
+    this is why storing a lot of items in lists has huge memory complexity
+
+    numpy arrays are stored in a continuous block in the memory - items are right next to each other
+
+### Array Introduction - operations
+
+    Adding items
+        we can insert new items to the end of the data structure until the data structure is not full - O(1) running time
+
+    What if the data structure becomes full?
+        have to allocate a larger chunk of memory in the RAM ( usually 2x the size of the actual array)
+
+        have to copy the existing items one by one to the new array
+
+        because of these operations: the resize operations take O(N) linear running time complexity - This is the bottleneck
+
+    start with a small sized array
+        we do not waste memory but we have to resize the array often with O(N) running time
+
+    Start with a huge array
+        we do waste memory because of the large size but at least we do not have to bother with resize operations
+
+    Memory and Running Time Trade off!!!
+
+    Adding items to arbitrary position (not to the end of the array)
+        It is an O(N) linear running time algorithm because the items must be shifted
+        worse case (move all items)
+
+    Removing items  
+        we can remove the last item of the array quite fast O(1) constant running time complexity
+
+    Removing a arbitrary item
+        is not that easy because we may shift multiple itmes - in O(N) linear running time complexity
+
+        first we have to find the item in O(N) running time then remove the item in O(1)
+        and finally have to shift the other items in O(N)
+
+        O(N) + O(1) + O(N) = O(N)
+
+        
+    
+
+
