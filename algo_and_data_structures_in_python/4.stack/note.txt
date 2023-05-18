@@ -1,0 +1,55 @@
+
+### What are stacks?
+
+    it is an abstract data types
+
+    it has a so-call LIFO (last in first out) structure - the last item we insert is the first item we take out
+
+    basic operations are pop(), push() and peek()
+
+    most of the modern programming languates are stack-oriented
+
+    they define most basic operations (adding two numbers) as taking their arguments from the stack and placing any return values back to a stack
+
+### Stack Memory
+
+    stack memory is a special region in the RAM (random access memory)
+
+    this is a special data type (stack) taht stores local variables and method calls
+
+    this is how the programming language know where to return after finish execution of a given method
+
+    it is small in size but fast to access
+    
+    no fragmentation
+
+    stack memory is a special region in the RAM
+
+    this is a special data type (stack) that store local variables and method calls
+
+    this is how the programming language knows where to return after finish execition of a given method
+
+    it is small in size but fast to access
+
+### Heap memory
+    heap memory is a special region in the RAM where dynamic memory allocation takes place
+
+    the size of the heap is way larger than the size of the stack memory
+
+    objects (reference types) are stored on the heap memory
+
+    it is large in size but slow to access
+
+    fragmentation
+
+    we can have a heap memory overflow if we allocate memory without deallcoating previously allocated memory space
+    or if we allocate an extremely large number of objets
+
+### real world application
+
+    Back Button in browsers
+
+    stack memory   
+        is extremely crucial in every operating system to store the function calls and local variables 
+
+        

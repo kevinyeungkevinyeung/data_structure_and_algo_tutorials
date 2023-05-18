@@ -1,0 +1,21 @@
+### Queue
+
+    It is an abstract data type - and it can be implemented either with arrays or with linked lists
+
+    It has a so-called FIFO strucutre - the first item we inserted is the first item we take out
+
+    basic operations are enqueue(), dequeue() and peek()
+
+    has several applications in operating systems and thread management (multithreading)
+
+    Queue are useful when a resource is shared with several consumers (for example threads)
+
+    threads are stored in Queues
+
+    Queue are important in CPU scheduling
+
+    When data is transferred asynchronously (data not necessarily received at the same rate as sent) between two processes
+
+    graph algo rely heavily on Queue: breath-first search use Queue as an underlying abstract data type
+
+    

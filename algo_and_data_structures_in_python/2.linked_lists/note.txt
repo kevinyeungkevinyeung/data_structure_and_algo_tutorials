@@ -1,0 +1,141 @@
+
+### Linked List
+
+    It is another data structure - so te aim is to be able to store items efficiently (insertion and removal operations)
+
+    Arrays have a huge disadvantage:
+        There may be, holes in the data structure and we have to shift a lot of items
+
+    This problem can be eliminated by linked lists
+
+    We have access to the first node of the linked list (head node) and other items can be accessed starting with this node
+
+    Last node of the linked list is pointing to NULL
+
+    Every node stores the data itself nad reference the next node in the linked list data structure
+
+    This is why linked lists need more memory than Arrays
+
+    It has an advantage - there can not be holes in the data structure so there is no need for shift operations
+
+    Easy data structures and easy to implement them
+
+    The items are not stores next to each other in the memory - so there is no random indexing
+
+    We can implement more complex data structure and abstract data types such as stacks and queues
+
+    Finding arbitrary item in a linked list still has O(N) linear running time complexity
+
+### Linked list operations
+
+    Adding items (in the beginning)
+        we can insert new items to the beginning of the data structure in O(1) constaant running time
+
+    Add items (at the end)
+        We can insert new items to the end of the data structure in O(N) linear running time
+
+        need to consider all the node before we can add the item to the end of the list
+
+    Removing items (in the beginning)
+        removing the first itme of the linked list is easy because we just have to update the references - in O(1)
+        constant running tie complexity
+
+    Removing Items (at the end)
+        removing the last item of the linked list is not that easy because first we have to traverse the list to get
+        there -in O(N) linear running time complexity
+
+    
+    Manipulate the first item (insertion or removal)
+        O(1) running time - this is why we like linked lists
+
+    Manipulate arbitrary item
+        O(N) running time - if we have to do several of these operations then linked list is not the best operations
+
+### Pros and Cons of linked list
+    Pros
+        Dynamic Data structure 
+            they can acquire memory at run-time without resizing the data structure
+
+        Grow Data Structure Organically
+            no problem if we do not know the number of items we want to store at compile-time
+
+        Can store different sized items
+            arrays on the other hand assume the items have the exact same size
+
+    Cons
+        More memory
+            Linked list need more memory than arrays because we have to store the references
+
+        No random access
+            there are no indexes - we can access the first node (head node) exlusively
+
+        Can not go Backwards
+            how to access the previous item?
+
+        Not Predictable
+            running time of the application depends on what operations the users do
+
+### Arrays and Linked lists
+
+    1. Dynamic and static data structure
+        Array are static data structure - we have to know the size of the data structures in advance (or we have to resize it)
+
+        Linked lists are dynamic data structures - they can grow organically based on the references (no resize operation needed)
+
+    2. Random Access (Random Indexing)
+        items in an array are located right next to each other in the main memory (RAM) this is why we can use indexes
+
+        there is no random access in a linked list data structure
+
+    3. Manipulate the first items   
+        we have to shift several items ( all the items in worst case) when manipulating the first itmes in arrays
+
+        linked list are dynamic data strucutures - we just have to update the references around the head node
+
+    4. Manipulating the last items
+        there can not be holes in the data structure when manipulating the last items in arrays
+
+        linked lists have access to the first node (head node) exclusively so in this case we have to traverse the whole list in O(N)
+        running time
+
+    5. Memory Management
+        arrays do not need any extra memory
+
+        linked lists on the other hand do need extra memory because of the references (pointers)
+
+    6. arbitrary item
+        O(N) is the same for both
+
+### Linked List application
+    Operation System uses almost all the important data structure. Let's talk about the real-world applications of linked list:
+
+    1. Low level Memory Management
+        Linked lists are important in low level memory Management 
+            when dealing with C programming malloc() and free function
+
+        with these built-in function we can manipulate the heap memory
+            char * char_ptr = (char*) malloc(30); // allocates 30 bytes of memory in the heap
+
+    2. Applications in Windows
+        The photoViewer application is another example of linked lists
+            Next photo: next node in the linked list
+            previous photo: previous node in the linked list
+
+    3. Blockchain
+        The blockchain is basically a simple linked list where blocks are cryptographically linked together
+
+        so the blockchain itself is a linked list with hash-pointers
+
+        every node in the blockchain has 2 has values: own has and the hash value of the previous blockchain
+
+    
+
+
+
+
+
+    
+
+
+
+    
